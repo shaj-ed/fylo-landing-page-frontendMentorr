@@ -1,0 +1,59 @@
+.newsletter {
+    background-color: $desaturated-blue;
+    padding-top: 8.5rem;
+    padding-bottom: 8.5rem;
+    
+    .container {
+        flex-direction: column;
+        gap: 2.8rem;
+        
+        @include respond-to(desktop) {
+            flex-direction: row;
+            align-items: center;
+        }
+    }
+
+    &__content {
+        
+        @include respond-to(desktop) {
+            flex: 1;
+        }
+    }
+
+    &__title {
+        color: #ffffff;
+    }
+
+    &__snippet {
+        color: #ffffff;
+        margin-top: 2.8rem;
+        max-width: 52.2rem;
+        opacity: .8;
+    }
+
+    &__form {
+
+        input {
+            @extend %common_buttons;
+            display: block;
+            padding: 1.6rem;
+            width: 100%;
+            margin-bottom: 1.6rem;
+        }
+
+        button {
+            @extend %common_buttons;
+            @extend %main_button;
+            width: 100%;
+
+            @include respond-to(tab) {
+                padding: 1.6rem 3.5rem;
+                width: auto;
+            }
+        }
+
+        @include respond-to(desktop) {
+            flex: 1;
+        }
+    }
+}

@@ -1,0 +1,67 @@
+.footer {
+    padding-top: 8.5rem;
+    padding-bottom: 8.5rem;
+    background-color: $very-dark-blue;
+    text-align: left;
+
+    a {
+        color: #ffffff;
+        display: block;
+        margin-bottom: 2.5rem;
+
+        &:hover {
+            color: $bright-blue;
+        }
+    }
+
+    &__main {
+        margin-top: 5.5rem;
+        display: grid;
+        gap: 8rem;
+
+        @include respond-to(tab) {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+
+    &__address {
+        flex-direction: column;
+        gap: 2rem; 
+        color: #ffffff;
+
+        span {
+            align-items: center;
+            gap: .8rem;
+            font-size: 1.6rem;
+        }
+    }
+
+    &__about,
+    &__contact {
+
+        a:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__social {
+        gap: 1.2rem;
+        justify-content: center;
+
+        i {
+            color: #ffffff;
+            width: 3.5rem;
+            height: 3.5rem;
+            border: .1rem solid #ffffff;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            font-size: 1.5rem;
+
+            &:hover {
+                cursor: pointer;
+                color: $bright-blue;
+            }
+        }
+    }
+}

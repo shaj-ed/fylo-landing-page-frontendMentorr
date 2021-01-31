@@ -1,0 +1,67 @@
+.hero {
+    margin-top: 11rem;
+    flex-direction: column;
+    gap: 7.5rem;
+
+    &__image {
+
+        img {
+            width: 100%;
+        }
+
+        @include respond-to(desktop) {
+            order: 2;
+        }
+    }
+
+    &__content {
+
+        @include respond-to(desktop) {
+            order: 1;
+        }
+    }
+
+    &__title {
+    }
+
+    &__snippet {
+        margin-top: 2.5rem;
+        margin-bottom: 4.5rem;
+        max-width: 57.5rem;
+    }
+
+    &__form {
+        flex-direction: column;
+        gap: 1.2rem;
+        
+        input {
+            @extend %common_buttons;
+            border: .1rem solid $desaturated-blue;
+            padding: 1.6rem;
+
+            @include respond-to(smallDevice) {
+                flex: 0.6;
+            }
+        }
+
+        button {
+            @extend %common_buttons;
+            @extend %main_button;
+        
+            @include respond-to(smallDevice) {
+                flex: 0.4;
+            }
+        }
+
+        @include respond-to(smallDevice) {
+            flex-direction: row;
+        }
+    }
+
+    @include respond-to(desktop) {
+        flex-direction: row;
+        gap: 3.5rem;
+        align-items: center;
+        margin-top: 5rem;
+    }
+}

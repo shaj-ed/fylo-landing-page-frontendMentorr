@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Fylo landing page with two column layout</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet"> <!-- Raleway -->
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> <!-- Open Sans -->
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="./dist/css/styles.css">
+
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header container flex">
+    <a href="#" class="logo">
+      <img src="./images/logo.svg" alt="Logo">
+    </a>
+
+    <nav class="header__nav flex">
+      <a href="#" class="header__link">Features</a>
+      <a href="#" class="header__link">Team</a>
+      <a href="#" class="header__link">Sign In</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero container flex">
+    <div class="hero__image">
+      <img src="./images/illustration-1.svg" alt="Hero Illustrator">
+    </div>
+
+    <div class="hero__content">
+      <h1 class="hero__title">
+        All your files in one secure location, accessible anywhere.
+      </h1>
+
+      <p class="hero__snippet">
+        Fylo stores your most important files in one secure location. 
+        Access them wherever you need, share and collaborate with friends, 
+        family, and co-workers.
+      </p>
+
+      <form class="hero__form flex">
+        <input type="email" class="transi" placeholder="Enter your email...">
+        <button class="transi">Get Started</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Testimonial -->
+  <section class="testimonial">
+    <div class="container flex">
+
+      <div class="testimonial__image">
+        <img src="./images/illustration-2.svg" alt="Testimonial Illustrator">
+      </div>
+
+      <div class="testimonial__content">
+        <h2 class="testimonial__title">
+          Stay productive, wherever you are
+        </h2>
+        <p class="testimonial__snippet--mb">
+          Never let location be an issue when accessing your files. Fylo has you 
+          covered for all of your file storage needs.
+        </p>
+        <p class="testimonial__snippet--mbl">
+          Securely share files and folders with friends, family and colleagues for 
+          live collaboration. No email attachments required!
+        </p>
+        <a href="#" class="testimonial__button flex transi">
+          <span>See how Fylo works</span>
+          <img src="./images/icon-arrow.svg" alt="Arrow Icon">
+        </a>
+
+        <article class="testimonial__item">
+          <img src="./images/icon-quotes.svg" alt="Icon Quotes">
+          <p>
+            Fylo has improved our team productivity by an order of magnitude. Since 
+            making the switch our team has become a well-oiled collaboration machine.
+          </p>
+
+          <div class="person flex">
+            <img src="./images/avatar-testimonial.jpg" class="person__image" alt="Avatar">
+
+            <div class="person__about flex">
+              <span class="person__name">
+                Kyle Burton
+              </span>
+
+              <span class="person__job">
+                Founder & CEO, Huddle
+              </span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter">
+    <div class="container flex">
+      <div class="newsletter__content">
+        <h2 class="newsletter__title">
+          Get early access today
+        </h2>
+    
+        <p class="newsletter__snippet">
+          It only takes a minute to sign up and our free starter tier is extremely generous. 
+          If you have any questions, our support team would be happy to help you.
+        </p>
+      </div>
+      
+      <form class="newsletter__form">
+        <input type="email" class="transi" placeholder="Enter your email...">
+        <button class="transi">Get Started For Free</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <a href="#" class="logo footer__logo">
+        <img src="./images/footer-logo.svg" alt="Logo">
+      </a>
+
+      <div class="footer__main">
+        <div class="footer__address flex">
+          <span class="flex">
+            <img src="./images/icon-phone.svg" alt="Phone">
+            Phone: +1-543-123-4567
+          </span>
+          <span class="flex">
+            <img src="./images/icon-email.svg" alt="Email">
+            example@fylo.com
+          </span>
+        </div>
+        <div class="footer__about">
+          <a href="#">About Us</a>
+          <a href="#">Jobs</a>
+          <a href="#">Press</a>
+          <a href="#">Blogs</a>
+        </div>
+        <div class="footer__contact">
+          <a href="#">Contact Us</a>
+          <a href="#">Terms</a>
+          <a href="#">Privacy</a>
+        </div>
+        <div class="footer__social flex">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-twitter" aria-hidden="true"></i>
+          <i class="fab fa-instagram" aria-hidden="true"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

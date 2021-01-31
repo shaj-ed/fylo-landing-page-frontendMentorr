@@ -1,0 +1,44 @@
+// Responsive Breakpoint
+$breakpoints: (
+    smallDevice: 450px,
+    tab: 768px,
+    desktop: 1200px,
+    largeDesktop: 1400px
+);
+
+@mixin respond-to($size) {
+    @media (min-width: map-get($breakpoints, $size)) {
+        @content;
+    }
+}
+
+// Extends
+%transition { // Transition
+    transition: all .2s ease-in-out;
+}
+
+%common_buttons {
+    outline: none;
+    font-family: $font-header;
+    font-size: 1.6rem;
+    font-weight: 700;
+    box-shadow: .0rem .0rem .1rem $very-dark-blue;
+    border-radius: .2rem;
+
+    @include respond-to(tab) {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+}
+
+%main_button {
+    border: none;
+    color: #ffffff;
+    background-color: $bright-blue;
+    padding: 1.6rem 0;
+    cursor: pointer;
+
+    &:hover {
+        background-color: lighten($bright-blue, 5%);
+    }
+}
